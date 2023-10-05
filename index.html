@@ -4,30 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">">
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-    <div class="backgroundImage">
-    </div>
+<div class="container">
+    <div class="backgroundImage"><img src="https://img.freepik.com/premium-photo/3d-render-king-armchair-with-glowing-neon-light-king-throne_42071-4142.jpg?w=360"></div>
+    
+    <!--form setup-->
     <div class="signUpForm">
-        <form class="form">
-            <fieldset>
-            <label for="first-name" >first name</label>
-                <input type="text" id="first-name" name="first-name">
-            <label for="last-name">last name </label>
-                <input type="text" id="last-name" name="last-name">
-            <label for="email">email</label>
-                <input type="email" id="email" name="email">
-            <label for="date">date of birth</label>
-                <input type="date" id="date" name="date">
-            <label for="password">enter password</label>
-                <input type="password" id="password" name="password">
-            <label for="password-check">first name</label>
-                <input type="password" id="password-check" name="password-check">
-        </form>
-    </fieldset>
-    </div>  
+        <div class="form">
+        <form action= "post">
+            
+           
+                <div class="input-data" id="title-box">
+                   Welcome to Ex-Cathedra
+                </div>
+               
+          
+
+            
+            
+            <div class="form-row">
+                <div class="input-data">
+                    <label for="first-name">first name</label>
+                    <div class="underline"></div>
+                    <input type="text" id="first-name" name="first-name" maxlength="20" required>
+                </div>
+                <div class="input-data">
+                    <label for="last-name">last name</label>
+                    <div class="underline"></div>
+                   <input type="text" id="last-name" name="last-name" maxlength="20" required>
+                </div>
+             </div>
+
+             <div class="form-row">
+                <div class="input-data">
+                    <label for="email">email</label>
+                    <div class="underline"></div>
+                    <input type="email" id="email" name="email" maxlength="30" required>
+                </div>
+                <div class="input-data">
+                    <label for="date">date of birth</label>
+                    <div class="underline"></div>
+                   <input type="date" id="date" name="date"maxlength="20" required>
+                </div>
+             </div>
+
+             <div class="form-row">
+                <div class="input-data">
+                    <label for="password">password</label>
+                    <div class="underline"></div>
+                    <input type="password" id="password" name="password" maxlength="20"required>
+                </div>
+                <div class="input-data">
+                    <label for="re-password">re-enter password</label>
+                    <div class="underline"></div>
+                   <input type="password" id="re-password" name="re-password" maxlength="20"required>
+                </div>
+             </div>
+
+             <div class="form-row-btn">
+                <div class="input-data-btn">
+                    <button type="submit" class="btn">Sign Up</button>
+               
+                </div>
+             </div>
+             <div class="comment">Already Signed up?<a href="#">Sign In</a></div>
+           
+            
+
+        </form>  
+        </div>  
     </div>
+
+
+</div>          
 </body>
 </html>

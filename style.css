@@ -1,7 +1,17 @@
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Play', sans-serif;
+    overflow: hidden;
+    background-color: rgb(50, 1, 50);
+    
 }
 
 .container {
@@ -9,30 +19,131 @@ body {
     width: 100%;
     height: 100vh;
     background-color: yellow;
+    overflow: hidden;
 }
 .backgroundImage {
     width: 40%;
-    background-color: brown;
+    background-color: rgb(50, 1, 50);
     height: 100%;
+}
+img {
+    position: relative;
+    height:550px;
+    width: 530px;
+    top: 50%;
+    opacity: 0.05;
 }
 .signUpForm {
     width: 70%;
     background-color: black;
     height: 100%;
-}
-
-input {
-    display: flex;
-    height: 30px;
-    width: 40em;
+    overflow: hidden;
 }
 
 .form {
     display: flex;
     flex-direction: row;
-    flex-flow: wrap;
+    position: relative;
+    width: 55vw;
+    height: 75%;
+ 
+    margin: auto;
+    top: 23%;
     justify-content: center;
-    margin-top: 50vh;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-row {
+    display: flex;
+    background-color: black; 
+    font-size: 35px;
+    color: grey;
+    border: 5px solid rgb(50, 1, 50);
+    border-radius: 10px;
+    margin: 2vh;
+    height: 160px;
+    text-align:left;
+}
+
+.form-row-btn {
+    display: flex;
+    background-color: black; 
+    font-size: 35px;
+    color: white;
+    border: 15px solid rgb(50, 1, 50);
+    border-radius: 10px;
+    width: fit-content;
+    margin: 2vh;
     
+}
+
+input {
+    display: flex;
+    height: 50px;
+    width: 20vw;
+    background-color: rgb(50, 1, 50);
+    color: gray;
+    font-size: 30px;
+    font-weight: normal;
+    border-radius: 5px;
+    align-content: center;
+    text-align: center;
+    outline: none;
+}
+
+input:invalid {
+    border-color: darkred;
+}
+input:valid {
+    border-color: rgb(79, 0, 139);
+}
+
+.btn {
+    display: flex;
+    height: 6vh;
+    width: 9vw;
+    background-color: rgb(50, 1, 50);
+    font-size: xx-large;
+    color: grey;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-data {
+    margin: 1.5vh;
+}
+.input-data-btn {
+    margin: 1vh;
     
+}
+.underline {
+    height: 5px;
+}
+.comment {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 16px;
+    color: white;
+    left: 4vh;
+    bottom: .5vh;
+    text-align: center;
+    height: 3vh;
+    width: 9vw;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: orange;
+}
+
+#title-box {
+    position: relative;
+    color: grey;
+    font-size: 25px;
+    display: flex;
+    margin: 2vw;
 }
